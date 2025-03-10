@@ -1,0 +1,51 @@
+Primitive:
+	Are most basic data types in a programming language. They represent simple values like integers, floating values, characters and Booleans.
+
+Non-primitive:
+	These are complex data structures built using primitive data types. they allow storing and organizing collections of data. 
+**Primitive Data Structures**
+
+* **Definition:** These are the most basic data types in programming languages. They represent simple values like integers, characters, and booleans.
+* **Examples:** 
+    * `int` (integer)
+    * `float` (floating-point number)
+    * `char` (character)
+    * `bool` (boolean)
+* **Characteristics:**
+    * **Single Value:** Store only a single value of a specific data type.
+    * **Fixed Size:** Have a predefined size in memory.
+    * **Direct Access:** Accessed directly by their memory address.
+
+**Non-Primitive Data Structures**
+
+* **Definition:** These are more complex data structures built using primitive data types. They allow storing and organizing collections of data.
+* **Examples:**
+    * **Array:** An ordered collection of elements of the same data type.
+    * **Linked List:** A linear collection of elements where each element points to the next.
+    * **Stack:** A LIFO (Last-In, First-Out) data structure.
+    * **Queue:** A FIFO (First-In, First-Out) data structure.
+    * **Tree:** A hierarchical data structure.
+    * **Graph:** A non-linear data structure with nodes and edges.
+* **Characteristics:**
+    * **Multiple Values:** Can store multiple values, often of different data types.
+    * **Variable Size:** Can grow or shrink dynamically.
+    * **Indirect Access:** Accessed through pointers or references.
+
+**Key Differences**
+
+| Feature | Primitive Data Structure | Non-Primitive Data Structure |
+|---|---|---|
+| **Complexity** | Simple | Complex |
+| **Data Storage** | Single value | Multiple values |
+| **Data Type** | Single data type | Can store multiple data types |
+| **Size** | Fixed size | Variable size |
+| **Memory Allocation** | Stack memory | Heap memory |
+| **Access** | Direct | Indirect (through pointers) |
+
+**Visual Comparison**
+
+[Image of primitive vs non-primitive data structures]
+
+**In Essence**
+
+Primitive data structures are the building blocks, while non-primitive data structures are complex structures built upon them to organize and manage data efficiently. The choice of data structure depends on the specific needs of the problem at hand.

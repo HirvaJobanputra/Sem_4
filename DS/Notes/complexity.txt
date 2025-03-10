@@ -1,0 +1,8 @@
+Complexity of an algorithm is the measure that indicates the performance of an algorithm is how much efficient in terms of time and space resources. The lesser the complexity, the more effective the algorithm. It is the way to measure the efficiency of an algorithm especially as the input size grows. 
+1. Time complexity:
+	Time complexity measures the amount of time an algorithm takes to execute as a function of the input size.
+
+	We can define complexity in 3 cases. 1. Best case 2. Worst case 3. Average case
+2. Space complexity:
+	Space complexity measures the amount of memory space an algorithm requires to execute as a function of the input size. It's a way to assess the algorithm's memory efficiency.
+	We can define complexity in 3 cases. 1. Best case 2. Worst case 3. Average case

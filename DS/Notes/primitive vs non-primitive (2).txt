@@ -1,0 +1,15 @@
+Primitive:
+1. Primitive data structures are the basic data types holding a single value like int, char or Booleans.
+2. Size of primitive data structures is predefined.
+3. They are directly stored in memory allowing direct access.
+4. They can only store a single value, making them less suitable for complex data organization.
+
+
+Non-primitive:
+1. Non-primitive data structures are more complex data types built from primitive data structures, allowing for the organization and storage of multiple values.
+
+2. The size of non-primitive data structures can vary depending on the number of element they store.
+
+3. They are often stored in memory using pointers, which can add layer of indirection.
+
+4. They can store multiple values and be organized in various ways, making them more suitable for complex data management.

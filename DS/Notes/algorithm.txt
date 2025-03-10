@@ -1,0 +1,12 @@
+An algorithm  is a step by step procedure created to solve a problem or perform a particular calculation in finite number of steps.
+
+Key characteristics f an algorithm:
+	1. Finiteness: It should terminate after a finite number of steps.
+	2. Definiteness: Each step of the algorithm must be precisely defined and unambiguous.
+	3. Input: An algorithm may or may not take an input.
+	4. Output: An algorithm produces output, which may be solution to the problem or some other helping result.
+	5. Effectiveness: The operations performed in an algorithm must be feasible and executable.
+We consider how the algorithm works under different scenarios:
+1. Best case: The most favourable output for an input.
+2. Worst case: The input that causes the algorithm t perform the most work.
+3. Average case: The expected output of an algorithm on a random input. More complex to calculate.

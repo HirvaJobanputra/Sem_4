@@ -1,0 +1,27 @@
+Define data structure and differentiate linear and non-linear data structure.
+
+
+Data structure is a systematic way of storing and organizing data within computer's memory. It's not just about storing data randomly, its about arranging in a specific format that allows for efficient access, modification and processing of that data. 
+
+There are two main types of data structures:
+1. Linear data structure:
+	Data elements are arranged in a sequential order, one after another. 
+Example:
+	Array:
+	Stack:
+	Queue:
+	Linked lists:
+	
+	Linear data structures are represented in single dimensions, making them simpler to visualize and traverse.
+	insert, update, push, pop etc operations are performed on linear data structures.
+	undo/ redo, music playlist.(linked list).
+
+2. Non-linear data structure:
+	Data elements are not arranged in sequential order.
+Example:
+	Trees:
+	Graphs:
+	
+	Represented in multi dimensions , allowing for more complex relationships between data elements. 
+	Detecting cycles, finding paths etc operations are performed in non-linear data structures
+	Social networks, file systems

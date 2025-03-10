@@ -1,0 +1,12 @@
+Types of data structures:
+Linear data structures:
+	1. array: Array is fixed size a collection of elements of same data types. We can store roll number of a class in an array.
+	2. Linked Lists: A linked list is a collection of elements where each node contains data and a pointer to the next node in 			sequence. A playlist in a music player is an example of linked lists.
+	3. Stacks: Stack follows LIFO principle. Undo/ redo.
+	4. queues: Follows FIFO principle.A print queue. Documents are added to the queue in the order they are submitted, and they 			are printed in that order.
+
+Non-linear data structures:
+
+	1. trees: A hierarchical data structure. elements are organized in a parent-child relationship. A file system on computer.  Files and folders are organized in a tree-like structure with the root directory at the top.
+	2. graphs: Graph is a collection of nodes connected by edges.
+
