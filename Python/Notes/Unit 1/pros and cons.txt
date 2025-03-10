@@ -1,0 +1,5 @@
+Disadvantages of python:
+	1. Speed: Slower in execution than other compiled languages like C++ or java due to its interpreted nature. Limitation for performance critical applications. 
+	2. Memory consumption: It consumes more memory than other languages that can be concerned for resource-constrained environments. 
+	3. Not opted for mobile computing: Used in sever side programming. It can not be used for mobile applications or client side programming.
+	4. Complex database interaction: 

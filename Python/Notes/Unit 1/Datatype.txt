@@ -1,0 +1,48 @@
+Certainly! In Python, data types define the kind of data a variable can hold. Here's a breakdown of some common data types:
+
+**1. Numbers**
+
+* **int:** Represents whole numbers (e.g., 10, -5, 0).
+    * `x = 10` 
+
+* **float:** Represents numbers with decimal points (e.g., 3.14, -2.5).
+    * `pi = 3.14159`
+
+**2. Text (Strings)**
+
+* **str:** Represents a sequence of characters enclosed in single quotes (`'`) or double quotes (`"`).
+    * `name = "Alice"`
+    * `message = 'Hello!'`
+
+**3. Boolean**
+
+* **bool:** Represents a truth value, either `True` or `False`.
+    * `is_raining = True`
+    * `is_sunny = False`
+
+**4. Sequences**
+
+* **list:** An ordered, mutable collection of items.
+    * `fruits = ["apple", "banana", "orange"]`
+
+* **tuple:** An ordered, immutable collection of items.
+    * `coordinates = (10, 20)`
+
+* **range:** Generates a sequence of numbers.
+    * `numbers = range(5)  # Generates 0, 1, 2, 3, 4`
+
+**5. Mapping**
+
+* **dict:** An unordered collection of key-value pairs.
+    * `person = {"name": "Alice", "age": 30}`
+
+**Key Points:**
+
+* **Dynamic Typing:** Python is dynamically typed, meaning you don't need to explicitly declare the data type of a variable. Python infers the type based on the assigned value.
+    * `x = 10` (x is an integer)
+    * `x = "Hello"` (x is now a string)
+
+* **Type Checking:** You can use the `type()` function to check the data type of a variable.
+    * `print(type(x))`
+
+This gives you a good overview of common data types in Python. Let me know if you'd like a deeper dive into any specific data type!

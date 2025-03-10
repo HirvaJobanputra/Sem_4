@@ -1,0 +1,8 @@
+Certainly! In Python, comments are lines of code that are ignored by the interpreter. 
+They are used to:
+
+Explain the code: Add notes to clarify the purpose of specific lines, functions, or sections of code. This helps in understanding the code's logic and improves maintainability.
+Document the code: Provide information about the program, its author, and any relevant details.
+Temporarily disable code: Comment out lines of code to temporarily disable them during testing or debugging without deleting them.
+1. Single line comments: #
+2. Multiline comments:""" """,''' '''

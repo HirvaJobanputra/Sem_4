@@ -1,0 +1,5 @@
+isnumeric() is the most inclusive, accepting characters like fractions (½), subscripts, and superscripts.
+isdigit() is the most restrictive, only accepting digits (0-9).
+isdecimal() is somewhere in between, accepting digits and decimal combining characters (which are rarely encountered in everyday use).Tuples are immutable, once created can not be modified. 
+Set is mutable but can not have mutable values.
+Set can not have mutable items like variables or list, and dictionaries.

@@ -1,0 +1,31 @@
+Variables
+
+What they are:
+
+A variable is a named container that stores a value.
+This value can be of different types like numbers (integers, floats), text (strings), or more complex data structures (lists, dictionaries).
+How to use them:
+
+You assign a value to a variable using the equals sign (=).
+For example:
+age = 30
+name = "Alice"
+price = 9.99
+Naming rules:
+
+Variable names must start with a letter (a-z, A-Z) or an underscore (_).
+They can contain letters, numbers, and underscores.
+ 
+They are case-sensitive (e.g., age and Age are different variables).
+Avoid using reserved keywords (like if, for, while) as variable names.
+Tokens
+
+What they are:
+Tokens are the smallest individual units of code in a Python program.
+They are like the building blocks of your code.
+Examples of tokens:
+Identifiers: Names given to variables, functions, classes (e.g., age, my_function, Person).
+Literals: Direct representations of values (e.g., 30 (integer), 3.14 (float), "Hello" (string), True (boolean)).
+Operators: Symbols that perform actions (e.g., + (addition), - (subtraction), * (multiplication), / (division), = (assignment)).
+Keywords: Reserved words with special meanings in Python (e.g., if, else, for, while, def, class).
+Punctuators: Symbols used for various purposes (e.g., (, ), {, }, [, ], :, ,).

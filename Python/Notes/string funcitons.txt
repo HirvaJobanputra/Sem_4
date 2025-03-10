@@ -1,0 +1,49 @@
+
+In Python, strings are immutable, meaning they cannot be changed after they are created. When you use a string function, it doesn't alter the original string. Instead, it creates a new string with the desired modifications and returns it.
+
+1. Basic String Operations
+
+len(string): Returns the length (number of characters) of the string.
+string[start:end]: Slices the string, returning a substring from the start index (inclusive) to the end index (exclusive).
+string[start:]: Slices the string from the start index to the end.
+string[:end]: Slices the string from the beginning to the end index (exclusive).
+string[start:end:step]: Slices the string with a specified step size.
+string + string2: Concatenates two strings.
+string * n: Repeats the string n times.
+
+2. Case Manipulation
+
+string.upper(): Converts the string to uppercase.
+string.lower(): Converts the string to lowercase.
+string.capitalize(): Capitalizes the first character of the string.
+string.title(): Capitalizes the first character of each word in the string.
+string.swapcase(): Swaps the case of all characters in the string.   
+
+3. Searching and Finding
+
+string.find(substring): Returns the lowest index of the substring within the string. Returns -1 if not found.
+string.rfind(substring): Returns the highest index of the substring within the string. Returns -1 if not found.
+string.index(substring): Similar to find(), but raises a ValueError if the substring is not found.
+string.rindex(substring): Similar to rfind(), but raises a ValueError if the substring is not found.
+string.startswith(prefix): Checks if the string starts with the specified prefix.
+string.endswith(suffix): Checks if the string ends with the specified suffix.
+string.count(substring): Counts the number of occurrences of the substring within the string.
+
+4. String Formatting
+
+string.format(*args, **kwargs): Formats the string using placeholders (e.g., {}).
+f-strings (formatted string literals): A concise way to format strings using expressions within curly braces (e.g., f"The value is {value}").
+5. Other Useful Functions
+
+string.strip(): Removes leading and trailing whitespace.
+string.lstrip(): Removes leading whitespace.
+string.rstrip(): Removes trailing whitespace.   
+string.replace(old, new): Replaces all occurrences of the old substring with the new substring.
+string.split(sep=None): Splits the string into a list of substrings based on the separator (default: whitespace).
+string.join(iterable): Joins the elements of an iterable (e.g., list, tuple) into a single string using the string as the separator.
+string.isalnum(): Checks if all characters in the string are alphanumeric.
+string.isalpha(): Checks if all characters in the string are alphabetic.
+string.isdigit(): Checks if all characters in the string are digits.
+string.isspace(): Checks if all characters in the string are whitespace.
+string.islower(): Checks if all characters in the string are lowercase.
+string.isupper(): Checks if all characters in the string are uppercase.

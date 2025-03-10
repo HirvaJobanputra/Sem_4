@@ -1,0 +1,97 @@
+How to convert int to binary 
+bin()
+bin(10)[2:] 
+
+How to convert binary to int
+int(BinaryString,Base)
+
+Bitwise AND - Both bits are 1 then 1 otherwise 0
+
+1010
+0100
+----
+0000
+
+-------------
+
+Bitwise OR - any one bits are 1 then 1 otherwise 0
+
+1010
+0100
+----
+1110
+
+-------------
+
+Bitwise NOT - A=10=1010
+
+1st step : Given No Complement 
+
+    +1010
+com -0101 (sign positive - negative)
+
+2nd step : add 1 to 1st compliment
+
+1st com : -0101 (sign ignore)
+2nd com :  1010
+
+ 1010
++   1
+-----
+ 1011 (here sign allocate)  
+
+3rd step : Convert into int
+
+---------------------
+
+Bitwise XOR - If the bits are different it returns 1 otherwise it returns 0.
+
+1010
+0100
+----
+1110
+
+---------------------
+
+Right Shift  a=10=1010 
+ 
+10>>1 [add 1 zero to left]
+
+1010 
+
+0101 = 5
+
+---------
+
+10>>2 [add 2 zero to left]
+
+1010
+0010 = 2
+
+----------------------
+
+Left Shift a=10=1010
+
+10<<1 [add 1 zero to right]
+
+1010
+10100 = 20
+
+10<<2 [add 2 zero to left]
+
+1010
+101000 = 40
+
+101000
+
+---------------------------
+XOR:
+	Returns 1 if the two bits are different.   
+Returns 0 if the two bits are the same.
+
+OR:
+	Returns 1 if at least one of the bits is 1.   
+Returns 0 only if both bits are 0.
+
+
+

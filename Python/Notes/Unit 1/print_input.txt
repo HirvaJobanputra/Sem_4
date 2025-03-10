@@ -1,0 +1,18 @@
+print() Function
+
+Purpose:
+
+Displays output to the console (the terminal or command prompt).
+Can display various data types, including strings, numbers, and variables.
+
+value1, value2, ...: The values you want to print.
+sep: The separator between values (default is a space ' ').
+end: The character to print at the end (default is a newline '\n').
+
+
+Gets input from the user.
+Returns the input as a string.
+prompt: An optional string that is displayed to the user before they enter input.
+
+print() is used to display information to the user.
+input() is used to get information from the user.

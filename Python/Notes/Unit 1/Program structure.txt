@@ -1,0 +1,24 @@
+Certainly, you can use the following as an answer to the prompt "Explain the program structure of Python using a suitable example.":
+
+Python Program Structure
+
+Writing Python Code:
+
+You can write Python code in any text editor (like Notepad, Sublime Text, VS Code) or an IDE (like PyCharm, Jupyter Notebook).
+Save the file with the .py extension.
+Data Types:
+
+Python dynamically determines the data type of a variable based on its assigned value.
+Common data types include:
+Numbers:
+int (integers, e.g., 10, -5)
+float (floating-point numbers, e.g., 3.14, -2.5)
+Strings: Text enclosed in single ('') or double ("") quotes (e.g., "Hello", 'World')
+Booleans: True or False
+Indentation:
+
+Python relies heavily on indentation (usually 4 spaces or a tab) to define code blocks.
+This is essential for control flow structures like:
+Conditional statements: if, elif, else
+Loops: for, while
+**Function definitions`

@@ -1,0 +1,8 @@
+In python, indentation is not just for styling purpose. It's crucial for defining code blocks. Unlike other languages that use {} to group a code, python relies on consistent spacing to define which code is associated with which block.
+ Python's interpreter uses indentation to determine the structure of your program. Incorrect indentation will lead to IndentationError and prevent the code from running correctly.
+if age >= 18:
+    print("You are an adult.") 
+    print("You can vote.")
+if age >= 18:
+    print("You are an adult.")
+print("You can vote.")  # This line is not part of the if block

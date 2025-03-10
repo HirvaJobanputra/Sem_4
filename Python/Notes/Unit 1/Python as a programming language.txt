@@ -1,0 +1,5 @@
+Define python as a programming language:
+
+Python is a open-source, interpreted, high-level, general-purpose programming language known for its readability and ease of use. It emphasizes code clarity and conciseness through its clean syntax and focus on indentation for blocks.
+Python code is executed line by line, unlike compiled languages that are translated into machine code before running. Allows for faster development and easier debugging. 
+It is a general purpose language that can be used in AI, data science, machine learning, automation and scripting etc areas. 

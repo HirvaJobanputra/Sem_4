@@ -1,0 +1,3 @@
+Python was created in 1991 by Guido van Rossum. It was a successor to the ABC programming language. The name python was given 
+Beginner friendly, versatile, Large community and support, Cross platform. 
+Scientific computing, data science and machine learning, artificial intelligence, game development, automation and scripting, Data visualization, Web development. 

@@ -1,0 +1,17 @@
+Steps to install python:
+	First download python installer from python.org. 
+	Choose the latest stable release of python 3.
+	
+Run the installer:
+	Double click the executable file.
+	Accept the license agreement.
+	Install now.
+
+Verify installation:
+	Open command prompt
+	python --version
+	pip --installer
+
+Using python:
+	Open editor like VS code
+	
