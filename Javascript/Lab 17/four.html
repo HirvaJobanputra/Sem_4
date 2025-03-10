@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>Enter Value :
+    <input type="text" name="values" maxlength="1" placeholder="Enter the Value" id="one">
+    <button onclick="checkvalue()" id="check">Check</button>
+    <p id="e"></p>
+    <script>
+        function checkvalue() {
+            da = document.getElementById("one").value
+            const charcode = da.charCodeAt(0);
+            e = document.getElementById("e")
+            if (da.length === 0) {
+                e.innerHTML = "Please Enter a Value ! ";
+                return 0;
+            }
+            if (charcode >= 48 && charcode <= 57) {
+                e.innerHTML = "You Enter a Number ! ";
+                return 0;
+            }
+            if (charcode >= 65 && charcode <= 90 || charcode >= 97 && charcode <= 122) {
+                e.innerHTML = "You Enter a Alphabet ! ";
+                return 0;
+            }
+            else {
+                e.innerHTML = "You Enter a Symbol ! ";
+                return 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

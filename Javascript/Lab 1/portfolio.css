@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Comic Neue';
+}
+.introduction{
+    background-color: rgb(172, 157, 244);
+}
+.col{
+    margin-left: 0;
+    margin-right: 0;
+}
+main{
+    position: relative;
+
+}
+/* .rm{
+    top: 50px;
+} */
+
+.intro p{
+    font-size: xx-large;
+    font-family: 'Pacifico','Nanum Gothic','EmojiOne';
+}
+.intro{
+    
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}

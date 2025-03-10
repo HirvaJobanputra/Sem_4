@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         n1=prompt("Enter n1:");
+         n2=prompt("Enter n2:");
+         console.log("factors of "+ n1);
+
+         // number 1 factors
+        var n1Factors=[ ];
+        j=0
+        for(i=2; i<n1; i++){
+            if(n1%i==0){
+                n1Factors[j]=i;
+                j++;
+                console.log(i)
+            }
+        }
+
+        // number 2 factors
+       const n2Factors = [];
+        console.log("factors of "+ n2);
+        j=0
+        for(i=2; i<n2; i++){
+            if(n2%i==0){
+                n2Factors[j]=i;
+                j++;
+                console.log(i)
+            }
+        }
+        
+        
+    </script>
+   
+</body>
+</html>

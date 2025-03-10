@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime checker</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Enter a number to check if n is prime or not:"));
+        var i=2,flag=0;
+        if(n==2)
+        {
+            alert("2 is prime");
+        }
+        else if(n<2)
+        {
+            alert("Invalid input!!");
+        }
+        else{
+            while(i<n)
+            {
+                if(n%i==0)
+                {
+                    flag=1;
+                    break;
+                }
+                i++;
+            }
+
+            if(flag==1)
+            {
+                alert(n+" is not prime.");
+            }
+            else{
+                alert(n+ " is prime")
+            }
+        }    
+    </script>
+</body>
+</html>

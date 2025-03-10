@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<script>
+	var n1=parseInt(prompt("enter numbeer 1:"));
+	var n2=parseInt(prompt("enter numbeer 2:"));
+	var max,lcm;
+	if(n1>n2){
+		max=n1;
+	}
+	else{
+		max=n2;
+	}
+	lcm=max;
+	while(lcm%n1!=0 || lcm%n2!=0){
+		console.log("LCM:"+lcm)
+		console.log("Max:"+max)
+		lcm+=max;
+	}
+	alert(lcm);
+</script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="greet()">
+    <h1 id="datetime"></h1>
+    <h1 id="greetings"></h1>
+    
+    <script>
+        function greet(){
+            var date = new Date();
+            const time=date.getHours();
+            document.getElementById('datetime').innerHTML=`Date and time: ${date.toLocaleDateString("en-GB")} ${date.toLocaleTimeString()}`;
+            if(time>=4 && time<12){
+                document.getElementById("greetings").innerHTML="Good morning !!☕"
+            }
+            else if(time>=12 && time<17){
+                document.getElementById("greetings").innerHTML="Good afternoon !!☀️"
+            }
+            else if(time>=17 && time<=24){
+                document.getElementById("greetings").innerHTML="Good Evening  !!🌅"
+            }
+            setInterval(greet,1000);
+        }
+    </script>
+</body>
+</html>

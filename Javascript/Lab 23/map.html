@@ -1,0 +1,10 @@
+<!-- . WAP to create a new array containing number of elements like color name in small
+letter (e.g. ['red', 'green', 'blue']) and convert each array element to Capitalized
+letter using map method. (B) -->
+<script>
+    let colors = ['blue','pink','purple'];
+    function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+}
+    document.write(colors.map(capitalize));
+</script>

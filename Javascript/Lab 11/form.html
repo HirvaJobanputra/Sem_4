@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 0 auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 0 auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <div class="container">
+    <form>
+        
+    </form>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                    <span id="error"></span>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phone">DOB:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob" >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="phone">Phone number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phone" id="phone" >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="female">Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </td>
+                </tr> 
+
+                <tr>
+                    <td>
+                        <label for="nationality">Nationality:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="nationality" name="nationality">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea name="address" id="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                    </td>
+                    <td>
+                        <select id="city">
+                            <option selected disabled>Select your city:</option>
+                            <option>Seoul</option>
+                            <option>Daegu</option>
+                            <option>Ilsan</option>
+                            <option>Busan</option>
+                            <option>Jeju</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="center" colspan="2">
+                        <button name="submit" id="submit" onclick="validation()">Submit</button>
+                    </td>
+                    <td  align="center" colspan="2">
+                        <button name="clear" id="clear" onclick="cls()">Reset</button>
+                    </td>
+                </tr>
+            </table>
+       
+    </div>
+</body>
+</html>
+
+<script>
+
+const dobfield = document.getElementById("dob");
+const today = new Date().toISOString().split("T")[0];
+// document.write(new Date().toISOString().split("T")[0]);
+dobfield.max = today;
+    function validation(){
+
+    const name=document.getElementById("name").value.trim();
+    const dob=document.getElementById("dob").value;
+    const email=document.getElementById("email").value.trim().toLowerCase();
+    const phone=document.getElementById("phone").value;
+     const gender = document.getElementsByName('gender');
+  
+    const address = document.getElementById('address').value.trim();
+    const nationality = document.getElementById('nationality').value.trim();
+    const city=document.getElementById("city").value;
+
+    
+    let namePattern=/^[A-Za-z]{3,}$/;
+    let emailPattern=/^[A-Za-z.]+@[A-Za-z.]+[A-Za-z]{2,4}$/;
+    let phonePattern=/^\d{10}$/
+
+    if(name===""){
+        alert("Enter your name:");
+        document.getElementById('name').focus();
+        return false;
+    }
+    else if(!namePattern.test(name)){
+        alert("Please enter name properly!");
+        return false;
+    }
+    if(dob===""){
+        alert("Date of birth required!!");
+        return false;   
+    }
+    if(email==""){
+        alert ("Please enter email!!");
+        return false;
+    }
+    else if(emailPattern.test(email)){
+        alert("Please enter email properly!");
+        return false;
+    }
+    if(phone=="")
+    {
+        alert("Please enter your phone number!!");
+        return false;
+    }
+    else if(!phonePattern.test(phone)){
+        alert("Please enter phone number in a proper format!!");
+        return false;
+    }   
+    if (gender[0].checked==false && gender[1].checked==false && gender[2].checked==false) {
+        alert("Please select your gender.");
+        return false;
+    }
+
+    if(address===""){
+        alert("Please enter your address!!");
+        return false;
+    }
+
+    if(nationality==="")
+    {
+        alert("Please enter your nationality!!");
+        return false;
+    }
+
+    if(city==="Select your city:")
+    {
+        alert("Please select your city!!");
+        return false;
+    }
+    alert("Form submitted successfully!!");
+    return true;
+
+}
+function cls(){
+    document.getElementById('frm').value="";
+}
+</script>

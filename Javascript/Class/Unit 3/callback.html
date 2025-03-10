@@ -1,0 +1,30 @@
+<script>
+    function add(a,b,d,nextFun){
+        ans=a+b;
+        nextFun(ans,d);
+        return ans;
+    }
+    function mul(a,b){
+        ans=a*b;
+        return ans;
+    }
+   var p1=10, p2=20, p3=20;
+    ans = add(p1,p2,p3,mul)
+    document.write(ans+"<br>");
+    
+</script>
+<script>
+    function calArea(l,b){
+        return (l*b);
+    }
+    function calPeri(l,b){
+        return (2*(l+b));
+    }
+    function rectCal(l,b,property){
+        ans=property(l,b);
+        return ans;
+    }
+    document.write("Area"+rectCal(2,5,calArea)+" square unit"+"<br>");
+    document.write("Perimeter:"+rectCal(2,5,calPeri)+" unit");
+
+</script>

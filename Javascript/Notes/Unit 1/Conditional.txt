@@ -1,0 +1,18 @@
+Conditional statements in javascript allows to execute a code based on whether the condition is true or false. Used to control the flow of the program.
+1. if:
+	Executes the block of code only if the specified condition is true.
+	Syntax:
+	if (){
+		// block of code
+	}
+	Example:
+2. if..else:
+	Provides an alternative block of code to execute if the initial condition is false.
+	if(condition){}
+	else{}
+3. else if ladder:
+	Check multiple conditions sequentially.
+	Executes the block of code associated with the first true condition.
+
+4. Switch:
+	Useful when you need to compare a single value against multiple possible cases.

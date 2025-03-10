@@ -1,0 +1,44 @@
+<script>
+  const fruits = ["Apple", "Banana", "Orange", "Mango"]; // Static array
+
+document.write(fruits + "<br><br>");
+
+while (true) {
+  let choice = parseInt(prompt("Menu: \n1. Push\n2. Pop\n3. Update\n4. Exit\n"));
+
+  switch (choice) {
+    case 1:
+      let fruit = prompt("Enter fruit name:");
+      fruits.push(fruit);
+      break;
+
+    case 2:
+      fruits.pop();
+      break;
+
+    case 3:
+      let oldFruit = prompt("Enter old fruit name:");
+      let newFruit = prompt("Enter new fruit name:");
+
+      for (let i = 0; i < fruits.length; i++) {
+        if (fruits[i] === oldFruit) {
+          fruits[i] = newFruit;
+          break;
+        }
+      }
+      break;
+
+    case 4:
+      break;
+
+    default:
+      alert("Invalid choice!! try again");
+  }
+
+  if (choice === 4) {
+    break;
+  }
+
+  document.write(fruits + "<br><br>");
+}
+</script>

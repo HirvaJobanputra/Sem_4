@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- WAP to pass array and a search value to function search and function will return the index position. (B) -->
+    <script>
+        myArray = new Array("BCA","MCA","BBA","MBA","BSC","MSC","BTECH","MTECH");
+        value=prompt("Enter the value to search");
+        
+        function search(array, value) {
+            return array.indexOf(value);
+        }
+        index=search(myArray, value);
+        document.write(index);
+    
+    </script> 
+
+</body>
+</html>

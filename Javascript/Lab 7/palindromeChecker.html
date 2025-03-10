@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome checker</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("Enter a number to check if its palindrome or not:"));
+        var rev=0,rem;
+        var temp=n;
+        while(n>    0){
+            rem=parseInt(n%10);
+            rev=parseInt(rem+(rev*10));
+            n=parseInt(n/10);
+        }
+        alert("Reverse:"+rev);
+        if(rev==temp){
+            alert("Palindrome");
+        }
+        else{
+            alert("Not palindrome");
+        }
+    </script>
+</body>
+</html>

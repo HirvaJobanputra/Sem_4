@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                background-color: rgb(221, 245, 220);
+            }
+            .container, h1{
+                display: flex;
+                align-items: center;
+                justify-self: center;
+            }
+            
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>Employee registration form</h1>
+        <form class="container">
+            <table border="2">
+                <!-- name -->
+               <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text">
+                    </td>
+               </tr>
+
+               <!-- Male female -->
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" value="Female" name="gender">Female
+                        <input type="radio" value="Male" name="gender">Male
+                    </td>
+                </tr>
+
+               <!-- Age -->
+                <tr>
+                    <td>Age:</td>
+                    <td>
+                        <input type="text" max="80">
+                    </td>
+                </tr>
+
+               <!-- Education -->
+                <tr>
+                    <td>Select Education:</td>
+                    <td>
+                        <select>
+                            <option selected disabled>Select education</option>
+                            <option value="BCA">BCA</option>
+                            <option value="B.tech">B.tech</option>
+                            <option value="MCA">MCA</option>
+                            <option value="M.tech">M.tech</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+
+                <!-- submit -->
+                 <tr>
+                    <td colspan="2" align="center">
+                        <button>Submit</button>
+                    </td>
+                 </tr>
+            </table>
+        </form>
+    </body>
+</html>

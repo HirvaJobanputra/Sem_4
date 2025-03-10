@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 150px;
+    }
+    #dob{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        top: 150px;
+    }
+    #birthdate{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        top: 150px;
+    }
+    #btn{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        position: relative;
+        top: 150px;
+    }
+</style>
+<body>
+    <section>
+        <h1>Select your birthdate</h1>
+        <input type="date" name="dob" id="dob" >
+        <br>
+        <button id="btn" onclick="calculate()">Calculate</button>
+        <p id="birthdate"></p>
+    </section>
+    <script>
+        
+        function calculate(){
+          var currentDate=new Date();
+          var currentYear=currentDate.getFullYear();
+          var birthdate=document.getElementById("birthdate");
+
+          d=document.getElementById("dob").value;
+          dob = new Date(d);
+          dob.setFullYear(currentYear);
+          if(dob<currentDate){
+            dob.setFullYear(currentYear+1);
+          }
+          timeleft=Math.abs(dob-currentDate);
+          daysleft=Math.ceil(timeleft/(1000*60*60*24));
+
+          if(daysleft==365){
+            birthdate.innerHTML="Hey!! its your birthday!!! ";
+            birthdate.innerHTML="Wish you a very happy birthdayy!!!🎉 "
+          }
+          else{
+            birthdate.innerHTML="Your birthday in "+daysleft+" Days";
+          }
+        }
+    </script>
+</body>
+</html>

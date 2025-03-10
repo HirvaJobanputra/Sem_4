@@ -1,0 +1,30 @@
+<!-- CRUD -->
+ <script>
+    var fruits = ["Blueberry","Blackberry","Strawberry","apple"];
+    function insert(fruit){
+        fruits.push(fruit);
+        return;
+    }
+    function remove(){
+        fruits.pop()
+        return
+    }
+    function update(fruit,newFruit){
+        for (let i=0; i<fruits.length; i++){
+            if(fruits[i]==fruit){
+                fruits[i]=newFruit;
+            }
+        }
+        return;
+    }
+    function display(){
+        fruits.forEach(element => {
+            document.write(element+", ")
+        });
+    }
+    insert("Blackberry");
+    insert("Cranberry");
+    remove();
+    update("Blackberry","Jamun");
+    display();
+ </script>

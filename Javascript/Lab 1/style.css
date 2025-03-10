@@ -1,0 +1,17 @@
+
+
+.order{
+    
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.centerDiv{
+    height:200px;
+    width:200px;
+    background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}

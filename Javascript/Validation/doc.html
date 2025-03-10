@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	// Case-insensitive match using the "i" modifier
+	let regex1 = /hello/i; 
+	console.log(regex1.test("HELLO")); // true
+
+	// Global match using the "g" modifier
+	let regex2 = /hello/g;
+	let text2 = "hello world, hello universe";
+	console.log(text2.match(regex2)); // ['hello', 'hello']
+
+	// Multiline match using the "m" modifier
+	let regex3 = /^world/m;
+	let text3 = "hello world\nworld of JavaScript";
+	console.log(text3.match(regex3)); // ['world']
+
+	// eval()
+	// let x = 10;
+	// let y = 20;
+	// let text = "x * y";
+	// let result = eval(text);
+	// document.write(result);
+
+	// infinity()
+	let x1 = 1.797693134862315E+308;
+	let y1 = x1 * 1.001;
+	document.write(x);
+
+	let result1 = isFinite(123);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch case calculator</title>
+    </head>
+    <body>
+        <script>
+           var  a=parseInt(prompt("Enter a number:"));
+            var b=parseInt(prompt("Enter another number:"));
+            var op=prompt("Enter +,-,/,*,%");
+
+            switch (op){
+                case "+":
+                {
+                    sum=a+b;
+                    alert("Sum:"+sum);
+                    break;
+                }
+                case '-':{
+                    sub=a-b;
+                    alert("Sub:"+sub);
+                    break;
+                }
+                case '*':{
+                    mul=a*b;
+                    alert("Multiplication:"+mul);
+                    break;
+                }
+                case '/': {
+                    div=a/b;
+                    alert("Division:"+div);
+                    break;
+                }
+                case '%':{
+                    mod=a%b;
+                    alert("Modulus:"+mod);
+                    break;
+                }
+            }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,51 @@
+<style>
+    div{
+        border: 1px solid black;
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+    }
+</style>
+<body>
+    <div onscroll="myfunction()">
+        Norwegian Wood:
+
+        “You’re really cute,” I said.
+        
+        “- Midori,” she said, “Say my name”.
+        
+        “You’re really cute, Midori,” I corrected myself.
+        
+        “What do you mean really cute?”
+        
+        “So cute the mountains crumble and the oceans dry up.”
+        
+        Midori lifted her face and looked at me. “You have this way special way with words.”
+        
+        “I can feel my heart softening when you say that,” I said, smiling.
+        
+        “Say something even nicer”.
+        
+        “I really like you, Midori. A lot.”
+        
+        “How much is a lot?”
+        
+        “Like a spring bear”, I said.
+        
+        “A spring bear?” Midori looked up again. “What’s that all about? A spring bear”.
+        
+        “You’re walking through a field all by yourself one day in spring, and this sweet little bear cub with velvet fur and shiny little eyes comes walking along. And he says to you ‘Hi, there, little lady. Want to tumble with me?’ So you and the bear cub spend the whole day in each other’s arms, tumbling down this clover covered hill. Nice huh?”.
+        
+        “Yeah. Really nice”.
+        
+        “That’s how much I like you”. 
+    </div>
+    <p> Scrolled <span id="demo">0</span>Times</p>
+</body>
+<script>
+    let x =0;
+    function myfunction(){
+        x++;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>

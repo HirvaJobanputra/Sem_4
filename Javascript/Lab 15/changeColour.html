@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #colourDiv{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colourDiv" >
+    </div>
+    <!-- <hr> -->
+    <script>
+        var colours=["burlywood","lightpink","lightblue","lightgreen"];
+        var countIndex=0;
+       function changeColour(){
+    
+          countIndex=(countIndex+1)%colours.length;
+          var element=document.getElementById("colourDiv");
+          element.style.backgroundColor=colours[countIndex];
+       }
+    
+    </script>
+    <button onclick="changeColour()">Colour Changer button</button>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <script>
+        var n1=parseInt(prompt("enter n1"));
+        var n2=parseInt(prompt("enter n2"));
+        var n3=parseInt(prompt("enter n3"));
+        var n4=parseInt(prompt("enter n4"));
+        var n5=parseInt(prompt("enter n5"));
+        var total_marks=n1+n2+n3+n4+n5;
+        var avg=total_marks/5;
+        var grade;
+        if(n1<=39 || n2<=39  || n3<=39 || n4<=39 || n5<=39){
+            alert("result:FAIL:.Grade:F");
+        }
+        if(avg>=90){
+            alert(grade='A');
+        }
+        else if(avg>=80){
+            alert(grade='B');
+        }
+        else if(avg>=70){
+            alert(grade='C');
+        }
+        else if(avg>=60){
+            alert(grade='D');
+        }
+        else if(avg>=40){
+            alert(grade='E');
+        }
+       else{
+        alert("invalid input");
+       }
+    
+
+
+    </script>
+</body>
+</html>

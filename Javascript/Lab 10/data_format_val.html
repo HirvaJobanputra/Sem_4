@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="validation2.js"></script> 
+    <link rel="stylesheet" href="style2.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <div class="container">
+        <form onsubmit="validation()" id="frm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                    <span id="error"></span>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="phone">DOB:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="dob" id="dob" >
+                    </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="phone">Phone number:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="phone" id="phone" >
+                    </td>
+                </tr>
+        
+                <!-- <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="female">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr> -->
+
+                <tr>
+                    <td  align="center" colspan="2">
+                        <button name="submit" id="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+
+const dob = document.getElementById("dob");
+const today = new Date().toISOString().split("T")[0];
+// document.write(new Date().toISOString().split("T")[0]);
+dob.max = today;
+document.write(dob);
+
+    function validation(){
+
+    const name=document.getElementById("name").value.trim();
+    const dob=document.getElementById("dob").value;
+    const email=document.getElementById("email").value.trim().toLowerCase();
+    const phone=document.getElementById("phone").value;
+    
+    let namePattern=/^[A-Za-z]{3,}$/;
+    let emailPattern=/^[A-Za-z.]+@[A-Za-z.]+[A-Za-z]{2,4}$/;
+    let phonePattern=/^\d{10}$/
+    let namerr = document.getElementById("error");
+    if(name===""){
+        alert("Enter your name:");
+        document.frm.name.focus();
+        // namerr.textcontent="Name nakh ne bhai!!";
+
+        return false;
+    }
+    else if(!namePattern.test(name)){
+        alert("Please enter name properly!");
+        return false;
+    }
+    if(dob===""){
+        alert("Date of birth required!!");
+        return false;   
+    }
+    if(email==""){
+        alert ("Please enter email!!");
+        return false;
+    }
+    else if(emailPattern.test(email)){
+        alert("Please enter email properly!");
+        return false;
+    }
+    if(phone=="")
+    {
+        alert("Please enter your phone number!!");
+        return false;
+    }
+    else if(!phonePattern.test(phone)){
+        alert("Please enter phone number in a proper format!!");
+        return false;
+    }
+    alert("Form submitted successfully!!");
+    return true;
+}
+
+</script>

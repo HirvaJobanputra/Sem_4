@@ -1,0 +1,15 @@
+Types of Jaascript:
+Internal Javascript:
+	JavaScript code is embedded directly within the HTML file using the <script> tag.
+	This can be placed within the <head> or <body> section of the HTML document.
+	Simple for small scripts and quick prototyping.
+	Can clutter the HTML code, making it harder to read and maintain.
+	Less efficient for larger scripts or scripts used across multiple pages.
+
+External Javascript:
+	External javascript is written in .js file, and then its linked in  the html file.
+	JavaScript code is written in a separate file with the .js extension.
+	The external file is linked to the HTML file using the src attribute within the <script> tag.
+	Improved code organization and maintainability.   
+	Reusable across multiple HTML pages
+	Requires an additional HTTP request to load the external JavaScript file, which can slightly increase page load time.

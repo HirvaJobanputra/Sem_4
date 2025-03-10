@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation Format</title>
+    <style type="text/css">
+        table {
+            height: 50vh;
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-top: 200px;">
+        <center><h1>Student Registration Form</h1></center>
+        <!-- <form action="" name="frm"> -->
+        <table bgcolor="#fff5cc" border="1" align="Center">
+            <tr>
+                <td><label for="name">Enter Name</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Enter Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Enter Phone No.</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male">Male
+                    <input type="radio" id="female" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Enter DOB</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="add">Address</label></td>
+                <td><textarea id="add" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">Enter City</label></td>
+                <td>
+                    <select id="city">
+                        <option selected disabled>Select Your City</option>
+                        <option>Rajkot</option>
+                        <option>Morbi</option>
+                        <option>Ahmadabad</option>
+                        <option>Baroda</option>
+                        <option>Gandhinagar</option>
+                        <option>Banglore</option>
+                        <option>Pune</option>
+                        <option>Surat</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nationality">Enter Nationality</label></td>
+                <td><input type="text" id="nationality" name="nationality"></td>
+            </tr>
+            <tr>
+                <td><label for="degree">Degree</label></td>
+                <td>
+                    <select id="degree">
+                        <option selected disabled>Select Your Degree</option>
+                        <option>CBSE Completed</option>
+                        <option>HSC Completed</option>
+                        <option>Under Graduate</option>
+                        <option>Post Graduate</option>
+                        <option>Ph.D</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <button type="button" onclick="validation()">Submit</button>
+                </td>
+            </tr>
+        </table>
+        <!-- </form> -->
+    </div>
+
+    <script>
+        const dobfiled = document.getElementById("dob");
+        const today = new Date().toISOString().split("T")[0];
+        dobfiled.max = today;
+
+        function validation() 
+        {
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const dob = document.getElementById("dob").value;
+            const add = document.getElementById("add").value;
+            const city = document.getElementById("city").value;
+            const gender = document.querySelectorAll("input[name='gender']");
+            const nationality = document.getElementById("nationality").value;
+            const degree = document.getElementById("degree").value;
+
+            const username = /^[a-zA-Z]{3,}$/;
+            const emailvalid = /^\w+([\.-]?\w+)*@\w+([\.]?\w+)*(\.\w{2,3})+$/;
+            const phonevalid = /^[0-9]{10}$/;
+            const nationalityvalid = /^[a-zA-Z]{3,}$/;
+
+            if (name === "") {
+                alert("Please Enter your name");
+                document.getElementById("name").focus();
+                return false;
+            }
+
+            if (!username.test(name)) {
+                alert("Invalid Name");
+                document.getElementById("name").value = "";
+                document.getElementById("name").focus();
+                return false;
+            }
+
+            if (email === "") {
+                alert("Please Enter Your Email");
+                document.getElementById("email").focus();
+                return false;
+            }
+
+            if (!emailvalid.test(email)) {
+                alert("Invalid Email! Enter Properly");
+                document.getElementById("email").value = "";
+                document.getElementById("email").focus();
+                return false;
+            }
+
+            if (phone === "") {
+                alert("Please Enter Your Phone");
+                document.getElementById("phone").focus();
+                return false;
+            }
+
+            if (!phonevalid.test(phone)) {
+                alert("Invalid Phone! Enter Properly");
+                document.getElementById("phone").value = "";
+                document.getElementById("phone").focus();
+                return false;
+            }
+
+            if (!gender[0].checked && !gender[1].checked) {
+                alert("Please Select Your Gender");
+                document.getElementById("gender").focus();
+                return false;
+            }
+
+            if (dob === "") {
+                alert("Please Enter your Date of Birth");
+                document.getElementById("dob").focus();
+                return false;
+            }
+
+            if (add === "") {
+                alert("Please Enter your Address");
+                document.getElementById("add").value = "";
+                document.getElementById("add").focus();
+                return false;
+            }
+
+            if (city === "" || city === "Select Your City") {
+                alert("Please Select Your City");
+                document.getElementById("city").value = "";
+                document.getElementById("city").focus();
+                return false;
+            }
+
+            if (nationality === "") {
+                alert("Please Enter your Nationality");
+                document.getElementById("nationality").focus();
+                return false;
+            }
+
+            if (!nationalityvalid.test(nationality)) {
+                alert("Invalid Nationality");
+                document.getElementById("nationality").value = "";
+                document.getElementById("nationality").focus();
+                return false;
+            }
+
+            if (degree === "" || degree === "Select Your Degree") {
+                alert("Please Select Your Degree");
+                document.getElementById("degree").value = "";
+                document.getElementById("degree").focus();
+                return false;
+            }
+
+            alert("Registered Successfully");
+             document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("dob").value = "";
+            document.getElementById("add").value = "";
+            document.getElementById("city").value = "";
+            document.getElementById("nationality").value = "";
+            document.getElementById("degree").value = "";
+            const genderRadios = document.querySelectorAll("input[name='gender']");
+            genderRadios.forEach(radio => radio.checked = false);
+        }
+    </script>
+</body>
+</html>

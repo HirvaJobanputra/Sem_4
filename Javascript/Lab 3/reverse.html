@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direction animation reverse</title>
+    <style>
+        .container{
+            position: static;
+            height: 78vh;
+            width:100%;
+            border: 1px solid black;
+    
+        }
+        .box{
+            position: relative;
+            height: 100px;
+            width: 150px;
+            background-color: rgb(47, 0, 255);
+            animation-name: direction;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+            
+            animation-direction: reverse;
+        }
+
+        @keyframes direction{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+
+            25%{
+                left:940px;
+                top: 0px;
+            }
+
+            50%{
+                left:940px;
+                top: 288px;
+            }
+
+            75%{
+                left: 0px;
+                top: 288px;
+            }
+
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

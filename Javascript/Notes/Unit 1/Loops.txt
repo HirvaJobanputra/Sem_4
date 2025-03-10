@@ -1,0 +1,27 @@
+Loops are used when we need to execute a block of code repeatedly until the condition is becomes false.
+It saves you from writing the same code multiple times.
+There are 5 types of loops in javascript:
+1. for of:
+	For of statements loops through the values of an inerrable object sch as array strings. 
+	<script>
+		person={name:"Hirva",surname="Jobanputra"};
+		name="";
+		
+		for (var x in person){
+			name+=person[x]+" ";
+		}
+	</script>
+2. for in:
+	Used with object as well as array.
+	Do not use in array if the index order is important.
+	<script>
+		var num=[1,2,3,4,6];
+		let summ=0;
+		for (x in num){
+			sum+=x;
+		}
+		alert(sum);
+	</script>
+3. do while
+4. while
+5. for

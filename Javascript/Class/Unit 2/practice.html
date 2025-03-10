@@ -1,0 +1,39 @@
+<script>
+//check if the given number is a happy number or not
+// let n=20;
+// let ans=0;
+// let rem=0;
+// while (n>0){
+//     ans+=rem*rem;
+//     rem=parseInt(n%10); 
+//     n=parseInt(n/10);
+// }
+// if(ans==1){
+//     document.write("Happy Number");
+// }
+// else{
+//     document.write("Unhappy Number");
+// }
+let num=7;
+let sum=0;
+let rem=0;
+set=new Set();
+while(true){
+    rem=parseInt(num%10);
+    sum=parseInt((rem*rem)+sum);
+    set.add(sum);
+
+    n=parseInt(num/10);
+
+    if(set.has(sum) || sum==1){
+        break;
+    }
+}
+if(sum==1){
+    document.write("Happy number");
+}
+else{
+    document.write("Not happy number");
+}
+
+</script>

@@ -1,0 +1,11 @@
+JavaScript is a client side scripting language used to make web pages interactive. Used for client side validation, animation and dynamic web pages. It is faster than server side languages because it does not have to go to the server all execution happens at the client's browser. It is dynamically typed language as we don't have to declare data type of the variable, it takes the datatype automatically. It supports object oriented programming concepts like inheritance and classes. 
+	
+Tasks performed by the JS:
+Generate HTML code for parts of codes. 
+To modify a web page based on inputs or events.
+Replacing and updating parts of the page.
+To change the style and positions of elements dynamically.
+To get browser information.
+"To control browser's actions.
+
+

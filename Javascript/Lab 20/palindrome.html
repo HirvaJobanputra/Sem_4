@@ -1,0 +1,24 @@
+<script>
+    isPalindrome=(n)=>{
+        temp=n
+        rem=0
+        rev=0
+        while(temp!=0){
+            rem=parseInt(temp%10);
+            // document.write(rem)
+            rev=parseInt(rem+(rev*10));
+            // temp/=10
+            // parseInt(temp/=10)
+            temp=parseInt(temp/10)
+        }
+        // document.write(rev)
+        if(rev==n){
+            document.write(n+" is palindrome!!");
+        }
+        else{
+            document.write(n+" is not palindrome!!");
+        }
+    }
+    isPalindrome(12231);
+
+</script>

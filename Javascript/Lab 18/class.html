@@ -1,0 +1,23 @@
+<script>
+            class Order{
+               static orders=[];
+                constructor(dish,qty){
+                    this.dish=dish;
+                    this.qty=qty;
+                }
+
+              static addOrder(dish,qty) {      
+                this.orders.push(dish+":"+qty);
+               }
+               static prn(){
+                console.log(this.orders)
+               } 
+        }    
+
+        var order=new Order("Dosa",1);
+        Order.addOrder("Dosa",1);
+        Order.addOrder("hhhh",1);
+        Order.prn();
+        // document.write(ans);
+
+</script>

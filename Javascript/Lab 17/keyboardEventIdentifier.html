@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myDiv{
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        margin-top: 200px;
+        margin-left: 400px;
+    }
+    .btn:hover{
+        box-shadow: 1 1 10px #06f3ff;
+        
+    }
+    button{
+        background-color: #2306ff;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div id="myDiv">
+        <form>
+            <label for="inputField">Enter the character:</label>
+            <input type="text" maxlength="1" id="inputField"><br><br>
+            <button type="button" onclick="checkInput()" class="btn">Check the keyboard event</button>
+        </form>
+        <p id="eventWriter"></p>
+    </div>
+   
+    <script>
+        function checkInput() {
+           
+        }
+    </script>
+</body>
+</html>

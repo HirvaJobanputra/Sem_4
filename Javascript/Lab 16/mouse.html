@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mouseHover(){
+            document.getElementById("text").style.color="red";
+        }                   
+        function mouseOut(){
+            document.getElementById("text").style.color="black";
+        }
+    </script>
+    <!-- WAP for following effect: If the mouse is over heading, change font color to “red” and if the mouse goes out of the heading change it to “black”.  -->
+
+    <h1 onmouseover="mouseHover()" id="text" onmouseout="mouseOut()">Change the font color:😎</h1>
+</body>
+</html>

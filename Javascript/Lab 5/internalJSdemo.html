@@ -1,0 +1,25 @@
+<!-- Internal script with confirm box -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal script with confirm box</title>
+    <script>
+        function myAlert(msg){
+            if(confirm("Are you sure you want to see the messge?")){
+                alert(msg); 
+            }
+            else{
+                alert("Can't display the messege as the user has cancelled the operation.")
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        alert("Hello students!!")
+        myAlert("Radhe Radhe");
+    </script>
+</body>
+</html>

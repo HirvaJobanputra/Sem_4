@@ -1,0 +1,17 @@
+Client side:
+Used when the browser already has the all code and the page is altered on the basis on the user input.
+Faster
+Browser side execution
+Can not access databases and other local files.
+Can be blocked by the user.
+Example:
+JavaScript and VBscript
+
+Server side:
+Used to create dynamic web pages based on the number of conditions when the user makes a request through the browsers.
+Slower execution
+Server side execution, request is sent to the server and the server responds.
+Can access server side resources.
+Can't be blocked by the user
+Example:
+PHP, JSP, ASP.net, ASP, RUBY perl and many more

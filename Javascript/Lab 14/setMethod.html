@@ -1,0 +1,20 @@
+<script>
+    var today=new Date();
+    today.setFullYear(2025);
+    document.write("setFullYear"+today+"<br>");  // Wed Jan 22 2025 18:29:32 GMT+0530 (India Standard Time)
+    today.setMonth(12); // jan 2026 appeared (11 + counts as next year) 
+    document.write("setMonth:"+today); 
+    document.write("<br>");
+    today.setDate(31); // 31st jan 2026 appeared
+    document.write("setDate:"+today); // 32 got the error
+    document.write("<br>");
+    document.write("setHours:"+today.setHours(12)); // 12 
+    document.write("<br>"); 
+    document.write("setMinutes:"+today.setMinutes(30)); // 30
+    document.write("<br>");
+    document.write("setSeconds:"+today.setSeconds(30)); // 30
+    document.write("<br>");
+    document.write("setMilliseconds:"+today.setMilliseconds(30)); // 30
+    document.write("<br>");
+    document.write("setTime:"+today.setTime(30)); // 30
+</script>

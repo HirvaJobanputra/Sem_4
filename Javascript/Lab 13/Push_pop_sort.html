@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        myArray=[];
+        size=parseInt(prompt("Enter the size of the array:"));
+        for(i=0;i<size;i++){
+            myArray[i]=prompt("Enter the element:");
+        }
+        document.write("Array :");
+        for(i=0;i<size;i++){
+            document.write(myArray[i]+" ");
+        }
+
+        //Push
+        // myArray.push(prompt("Enter the element to push:"));
+        // myArray.push(prompt("Enter the element to push:"));
+        // document.write("<br>Array after push:");
+        // for(i=0;i<myArray.length;i++){
+        //     document.write(myArray[i]+" ");
+        // }
+
+        //Pop
+        // popped_element=myArray.pop();
+        // document.write("<br>Array after pop:");
+        // for(i=0;i<myArray.length;i++){
+        //     document.write(myArray[i]+" ");
+        // }
+        // document.write("<br>Popped element:"+popped_element);
+
+        //Sort
+        newArray=[];
+        newArray=myArray.sort((a,b)=> {return a-b});
+        document.write("<br>Array after sort:");
+        for(i=0;i<newArray.length;i++){
+            document.write(newArray[i]+" "+"<br>");
+        }
+
+    </script>
+</body>
+</html>

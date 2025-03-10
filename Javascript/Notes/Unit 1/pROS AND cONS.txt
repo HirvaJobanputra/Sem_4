@@ -1,0 +1,17 @@
+Pros of JS:
+Faster execution speed.
+More interactive as it provides response immediately
+Browsers uses it's own resources, and eases the load on server.
+Saves network bandwidth.
+
+
+Cons of JS:
+Code is loaded on browser so it will be visible to the clients.
+User can modify the code.
+Local files and databases cannot be accessed.
+User can disable client side scripting.
+
+
+
+
+

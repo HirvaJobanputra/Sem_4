@@ -1,0 +1,111 @@
+<script>
+
+// isFinite("123"): "123" converts to the number 123. 123 is finite. true.
+// isFinite("abc"): "abc" converts to NaN. NaN is not finite. false.
+// isFinite(null): null converts to 0. 0 is finite. true.
+// isFinite(undefined): undefined converts to NaN. NaN is not finite. false.
+// isFinite(1/0): 1/0 is Infinity. Infinity is not finite. false.
+// isFinite(new Number(10)): new Number(10) is an object that coerces to the number 10. 10 is finite. true.
+// isFinite({valueOf: () => 5}): The object coerces to 5. 5 is finite. true.
+// isFinite({valueOf: () => "xyz"}): The object coerces to NaN. NaN is not finite. false.
+
+    // isFinite
+    console.log(isFinite({valueOf: () => 5})) //true
+    console.log(isFinite("5".valueOf())) //true
+    // document.write(isFinite(Infinity)) // false
+    // document.write(isFinite(-Infinity)) // false
+    // document.write(isFinite("Infinity")) // false
+    // document.write(isFinite("-1")) // true
+    // document.write(isFinite("2sdsd")) // false
+    // document.write(isFinite(2fr)) // error
+    // document.write(isFinite(2)) // true
+    // document.write(isFinite("abc")) // false
+    // document.write(isFinite(3/10)) // true
+    // document.write(isFinite(3/0)) // false
+    // document.write(isFinite("3/0")) // false
+    // document.write(isFinite(3*3)) // true
+    // document.write(isFinite("3"*"3")) //true
+    // document.write(isFinite(null)) //true
+    // document.write(isFinite(NaN)) //false
+    // document.write(isFinite(undefined)) //false
+    // document.write(isFinite(0x10)); // 16 in decimal, true
+    // console.log(isFinite(new Number(10))); // Should be true
+    // console.log(isFinite(new Number(NaN))); // Should be false
+    // console.log(isFinite(new Number(Infinity))); // Should be false
+    // console.log(isFinite(new Number("abc"))); // Should be false (Number object will hold NaN)
+
+
+
+
+    // isNan
+    // document.write(isNaN("123")) //false
+    // document.write(isNaN("cdf")) // true
+    // document.write(isNaN("12njj")) // true
+    // document.write(isNaN(123)) // faalse
+    // document.write(isNaN(sfsf)) //error
+    // document.write(isNaN(12jk)) // error
+    // document.write(isNaN(Infinity)) // false
+    // document.write(isNaN(-Infinity)) //false
+    // document.write(isNaN(3/0)) // false
+    // document.write(isNaN("3/4")) //true
+    // document.write(isNaN(undefined)) //true
+    // document.write(isNaN(null)) //false
+
+
+
+   // Number()
+    // document.write(Number("-123")) //-123
+    // document.write(Number("123sawe")) //Nan
+    // document.write(Number("abc")) //NaN
+    // document.write(Number("3/0")) //NaN
+    // document.write(Number("3/10")) //NaN
+
+    // document.write(Number(-123)) //-123
+    // // document.write(Number(123abc)) //error
+    // // document.write(Number(abx)) //error
+    // document.write(Number(9/0)) //Infinity
+    // document.write(Number(3/10)) //0.3
+    
+    // eval()
+    // document.write(eval("a+b")) //error
+    // document.write(eval(a+b)) //error
+    // document.write(eval("10/90")) //0.1111111111111111
+    // document.write(eval("10/0")) // infinity
+    // document.write(eval(20/0)) //infinity
+    // document.write(eval(20/4)) //5
+    // document.write(eval(NaN) ) // NaN
+    // document.write(eval(undefined) ) // undefined
+
+
+
+    // parseFloat()
+    // document.write(parseFloat(123)) //123
+    // document.write(parseFloat(123.0)) //123
+    // document.write(parseFloat(123.34)) //123.34
+    // document.write(parseFloat(123..avs)) //NaN
+    // document.write(parseFloat(12/2)) //6
+    // document.write(parseFloat(123www)) //error
+    // document.write(parseFloat(123.qww)) //error
+    // document.write(parseFloat("123")) //123
+    // document.write(parseFloat("123.9")) //123.9
+    // document.write(parseFloat("123.dfdnj")) //123
+    // document.write(parseFloat(12/2)) //6
+
+
+    //parseInt
+    // document.write(parseInt(123)) //123
+    // document.write(parseInt(123.0)) //123
+    // document.write(parseInt(123..avs)) //NaN
+    // document.write(parseInt(12/2)) //6
+    // document.write(parseInt(123www)) //errr
+    // document.write(parseInt(123.qww)) //error
+    // document.write(parseInt("123")) //123
+    // document.write(parseInt("123.9")) //123
+    // document.write(parseInt("123.dfdnj"))//123
+    // document.write(parseInt(12/9)) //1
+        // document.write(parseInt(undefined)) //NaN
+        // document.write(parseInt(null)) //NaN
+
+
+
+</script>

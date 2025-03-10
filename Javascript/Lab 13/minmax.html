@@ -1,0 +1,30 @@
+<!-- WAP to read a numeric array from user and find maximum and minimum numberfrom it. (A)-->
+<script>
+    size=parseInt(prompt("Enter size of the array:"));
+    number = []
+    for (i=0;i<size;i++){
+        number[i]=parseInt(prompt("Enter the number:"));
+    }
+ 
+    for(i=0;i<size;i++){
+        document.write(number[i]+"<br>");
+    }
+ 
+    min=number[0];
+    max=number[0];
+    for(i=0;i<size;i++){
+        if(number[i]<min){
+            min=number[i];
+        }
+        if(number[i]>max){
+            max=number[i];
+        }
+    }
+    // min = Math.min(number);
+    // max = Math.max(number);
+</script>
+<html>
+    <h2>Min and max</h2>
+    <p>Min: <script>document.write(min);</script></p>
+    <p>Max: <script>document.write(max);</script></p>
+</html>

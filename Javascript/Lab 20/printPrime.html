@@ -1,0 +1,29 @@
+<script>
+    // print prime numbers between a range
+    ans=(a,b)=>{
+        prime_numbers=[];
+        for (i=a; i<b; i++){
+            if(i<=1){
+               continue;
+            }
+            flag=0;
+            for (j=2; j<i ; j++){
+                if(i%j==0){
+                    flag=1;
+                    break;
+                }
+            }
+            if(flag==0){
+                prime_numbers.push(i);
+            }
+
+        }
+        
+        document.write("These are the prime numbers between "+a+" and "+b+": "+"<br>");
+        for (let i of prime_numbers){
+            document.write(i+"<br>")
+        }
+        return ""
+    }
+    document.write(ans(1,10))
+</script>

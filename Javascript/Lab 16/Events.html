@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+          function mouseFilter(event){
+            console.log(event)
+                const events=document.getElementById("events");
+                events.innerHTML=`event ${event.type}`;
+        }
+        document.addEventListener("mouseover",mouseFilter);
+        document.addEventListener("mouseout",mouseFilter);
+        document.addEventListener("mousedown",mouseFilter);
+        document.addEventListener("click",mouseFilter);
+        document.addEventListener("dbclick",mouseFilter);
+        document.addEventListener("mouseup",mouseFilter);
+        document.addEventListener("mousedown",mouseFilter);
+    </script>
+    <h1>See mouse effects</h1>
+    <button>Hover or click to  see the effects:</button>
+    <div id="events"></div>
+   
+
+</body>
+</html>

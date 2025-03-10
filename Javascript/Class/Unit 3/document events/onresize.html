@@ -1,0 +1,12 @@
+<body onresize="myfunction()">
+    <p>Try to resize the browser</p>
+    <p id="demo"></p>
+</body>
+<script>
+    function myfunction(){
+        let w=window.outerWidth;
+        let h=window.outerHeight;
+        let text="window size: Width= "+w+" Height= "+h;
+        document.getElementById("demo").innerHTML=text
+    }
+</script>

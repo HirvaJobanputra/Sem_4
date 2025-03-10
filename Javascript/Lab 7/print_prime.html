@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print prime number between the given range:</title>
+</head>
+<body>
+    <script>
+            var start=parseInt(prompt("Enter start number:"));
+            var end=parseInt(prompt("Enter end number:"));
+            var flag = 1;
+            if(start>end){
+                temp=start;
+                start=end;
+                end=temp;
+            }
+            for(let i= start;i<=end;i++){
+                for(let j = 2;j<i;j++){
+                    if(i%j===0){
+                        flag=0;
+                        break;
+                    }
+                }
+                if(flag===1 && i!=0 && i!=1){
+                    console.log(i)
+                }
+                flag=1;
+
+            }
+
+    </script>
+
+</body>
+</html>

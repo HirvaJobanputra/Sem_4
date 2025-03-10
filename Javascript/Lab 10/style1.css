@@ -1,0 +1,28 @@
+h1{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            position: relative;
+            top: 100px;
+            font-family: "Rubik Vinyl", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(124, 15, 123);
+
+} 
+body{
+    background-color: rgb(205, 250, 255);
+}
+div{
+    box-shadow: 5px 5px 10px rgb(243, 126, 245); 
+     /* border: 3px solid rgba(144, 0, 255, 0.91);  */
+      padding: 20px; 
+      margin: 30px; 
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      position: relative;
+      top: 100px;
+      font-family: "Shantell Sans", serif;
+      background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(126, 17, 235, 0.414));
+}

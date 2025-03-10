@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName() Demo</title>
+</head>
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 150px;
+    }
+    body{
+        background-color: rgb(130, 182, 246);
+        
+    }
+</style>
+<body>
+   <div>
+    <section>
+        <h1>Click on the button to get Date</h1>
+        <br>
+    </section>
+    <section>
+        <button id="myButton" onclick="getDate()">Get Date</button>
+    </section>
+    <section>
+        <h1 id="date"></h1 >
+    </section>
+   </div>
+    
+    <script>
+        function getDate(){
+            date = new Date();
+            document.getElementById("date").innerHTML=date;
+        }
+    </script>
+</body>
+</html>
+<!-- 53. WAP to print current date and time on click of “Date and Time” button.  -->

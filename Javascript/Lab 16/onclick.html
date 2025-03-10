@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <script>
+        var colors=["hsl(192, 74%, 52%)","hsl(223, 92%, 55%)","hwb(311 14% 4%)"];
+        countIndex=0;
+        function changeColor(){
+            countIndex=(countIndex+1)%colors.length;
+            document.getElementById("body").style.backgroundColor=colors[countIndex];
+        }
+    </script>
+    <button onclick="changeColor()">Change background-color</button>
+</body>
+</html>

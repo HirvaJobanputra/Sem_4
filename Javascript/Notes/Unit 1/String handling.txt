@@ -1,0 +1,32 @@
+String handling in javascript:
+String concatenation:
+	1. With + operator
+		Ex. "Darshan"+"Univarsity"
+	2. with concat() function
+		Ex. str1="Darshan"
+		    str2="University"
+		    str3="Rajkot"
+		    final=str1.concat(" ",str2," ",str3 )
+
+String length:
+	var name="Darshan"
+	var length=name.length
+
+String slicing and extracting:
+	var name="Darshan"
+	var part=name.slice(0,3) // Output:Dar
+
+Change case in string:
+	name.toLowerCase()
+
+charAt(index)
+charCodeAt(index)
+[index]
+indexOf(searchstring)
+substring(start,end)
+substr(start, length)
+trim()
+replace()
+split()
+
+			

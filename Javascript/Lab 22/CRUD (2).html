@@ -1,0 +1,42 @@
+<script type="text/javascript">
+
+let array = ["blueberry","strawberry","apple"];
+
+
+function insertElement(arr, index, element) {
+    arr.splice(index, 0, element);
+}
+
+
+function updateElement(arr, index, newElement) {
+    if (index >= 0 && index < arr.length) {
+        arr[index] = newElement;
+    } else {
+        document.write("Invalid index");
+    }
+}
+
+
+function deleteElement(arr, index) {
+    if (index >= 0 && index < arr.length) {
+        arr.splice(index, 1);
+    } else {
+        document.write("Invalid index");
+    }
+}
+
+
+insertElement(array, 2, 25);
+document.write("After insertion: ", array);
+  document.write("<br>");
+
+
+updateElement(array, 3, 35);
+document.write("After update: ", array);
+  document.write("<br>");
+
+
+deleteElement(array, 4);
+document.write("After deletion: ", array);
+
+</script>

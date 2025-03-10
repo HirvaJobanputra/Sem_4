@@ -1,0 +1,20 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    top: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    top: 100px;
+    box-shadow: 5px 5px 10px #FFCCE1; 
+     border: 3px solid #D9ABAB; 
+      padding: 10px; 
+      margin: 20px; 
+      color:#921A40;
+      background-image: linear-gradient(#E195AB,#FFF5D7);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        border: 1px solid black;
+        background-color: bisque;
+        height: max-content;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        left: 500px;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+        left: 500px;
+    }
+    hr{
+        position: relative;
+        top: 200px;
+    }
+</style>
+<body>
+    <section id="text">
+            See this text
+    </section>
+    <hr>
+    <button onclick="changeColor()">Change font colour</button>
+    <button onclick="changeBg()">Change background colour</button>
+    <button onclick="changeFont()">Change font size</button>
+    <script>
+        // function changeColor(){
+        //     document.getElementById("text").style.="blue";
+        // }
+        function changeBg(){
+            document.getElementById("text").style.backgroundColor="lightpink";
+        }
+        function changeFont(){
+            document.getElementById("text").style.fontSize="3rem";
+            document.getElementById("").style
+        }
+    </script>
+</body>
+</html>
