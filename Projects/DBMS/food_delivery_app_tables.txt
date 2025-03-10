@@ -1,0 +1,40 @@
+Table Name      Column Name     Data Type       Constraints
+Users   user_id INT     PRIMARY KEY, AUTO_INCREMENT
+Users   user_name       VARCHAR(255)      NOT NULL
+Users   email   VARCHAR(255)      UNIQUE, NOT NULL
+Users   phone_number    VARCHAR(20)       UNIQUE, NOT NULL
+Users   address TEXT    NOT NULL
+Users   password        VARCHAR(255)      NOT NULL
+Restaurants     restaurant_id   INT     PRIMARY KEY, AUTO_INCREMENT
+Restaurants     restaurant_name VARCHAR(255)      NOT NULL
+Restaurants     cuisine_type    VARCHAR(255)      NOT NULL
+Restaurants     address TEXT    NOT NULL
+Restaurants     phone_number    VARCHAR(20)       NOT NULL
+Restaurants     rating  DECIMAL(2,1)      
+Menu    menu_id INT     PRIMARY KEY, AUTO_INCREMENT
+Menu    restaurant_id   INT     FOREIGN KEY referencing Restaurants(restaurant_id)
+Menu    item_name       VARCHAR(255)      NOT NULL
+Menu    description     TEXT    
+Menu    price   DECIMAL(5,2)      NOT NULL
+Menu    availability    BOOLEAN DEFAULT TRUE
+Orders  order_id        INT     PRIMARY KEY, AUTO_INCREMENT
+Orders  user_id INT     FOREIGN KEY referencing Users(user_id)
+Orders  restaurant_id   INT     FOREIGN KEY referencing Restaurants(restaurant_id)
+Orders  order_date      DATETIME        DEFAULT CURRENT_TIMESTAMP
+Orders  total_amount    DECIMAL(7,2)      NOT NULL
+Orders  delivery_address        TEXT    NOT NULL
+Orders  order_status    VARCHAR(50)       DEFAULT 'Pending'
+OrderItems      order_item_id   INT     PRIMARY KEY, AUTO_INCREMENT
+OrderItems      order_id        INT     FOREIGN KEY referencing Orders(order_id)
+OrderItems      menu_id INT     FOREIGN KEY referencing Menu(menu_id)
+OrderItems      quantity        INT     NOT NULL
+OrderItems      price   DECIMAL(5,2)      NOT NULL
+DeliveryStaff   delivery_staff_id       INT     PRIMARY KEY, AUTO_INCREMENT
+DeliveryStaff   staff_name      VARCHAR(255)      NOT NULL
+DeliveryStaff   phone_number    VARCHAR(20)       UNIQUE, NOT NULL
+DeliveryStaff   vehicle_type    VARCHAR(50)       
+Payments        payment_id      INT     PRIMARY KEY, AUTO_INCREMENT
+Payments        order_id        INT     FOREIGN KEY referencing Orders(order_id)
+Payments        payment_method  VARCHAR(50)       NOT NULL
+Payments        payment_status  VARCHAR(50)       DEFAULT 'Pending'
+Payments        transaction_id  VARCHAR(255)      UNIQUE
